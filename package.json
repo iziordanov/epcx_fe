@@ -1,10 +1,11 @@
 {
   "name": "epcx-fe",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node --max-old-space-size=2048 node_modules/@angular/cli/bin/ng serve --watch --port=4312 --configuration=development --open",
+    "build": "ng build --configuration production",
+    "prebuild": "npm --no-git-tag-version version patch",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -37,6 +38,7 @@
     "@angular/cli": "^20.3.9",
     "@angular/compiler-cli": "^20.3.0",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^24.10.0",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
