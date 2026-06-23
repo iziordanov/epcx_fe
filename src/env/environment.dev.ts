@@ -5,7 +5,7 @@ export const environment = {
   abreviation: 'DV',
   services: {
     url: {
-      auth: 'https://ws.epcx.iordanov.info/',
+      auth: 'https://epcx.ws.iordanov.info/',
     },
     domains: {
       iordanovInfo: 'epcx.ws.iordanov.info',

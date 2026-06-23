@@ -5,8 +5,7 @@ export const environment = {
   abreviation: 'PD',
   services: {
     url: {
-      auth: 'https://ws.epcx.iordanov.info/',
-      book: 'https://ws.epcx.iordanov.info/book/',
+      auth: 'https://epcx.ws.iordanov.info/',
     },
     domains: {
       iordanovInfo: 'epcx.ws.iordanov.info',

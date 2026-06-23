@@ -3,7 +3,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
+    "outDir": "./dist/epcx_fe",
+    "rootDir": "./src",
     "types": [
       "jasmine",
       "node"
